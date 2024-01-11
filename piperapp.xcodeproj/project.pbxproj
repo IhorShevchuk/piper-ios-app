@@ -1,0 +1,729 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		0181B8A72B0E50470030F36E /* piperappApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0181B8A62B0E50470030F36E /* piperappApp.swift */; };
+		0181B8A92B0E50470030F36E /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0181B8A82B0E50470030F36E /* ContentView.swift */; };
+		0181B8AB2B0E50480030F36E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0181B8AA2B0E50480030F36E /* Assets.xcassets */; };
+		0181B8AE2B0E50480030F36E /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0181B8AD2B0E50480030F36E /* Preview Assets.xcassets */; };
+		0181B8B82B0E50480030F36E /* piperappTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0181B8B72B0E50480030F36E /* piperappTests.swift */; };
+		0181B8D42B0E538E0030F36E /* piperDemo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0181B8D32B0E538E0030F36E /* piperDemo.swift */; };
+		01B411442B4F77F700C9F854 /* piper-objc in Frameworks */ = {isa = PBXBuildFile; productRef = 01B411432B4F77F700C9F854 /* piper-objc */; };
+		01F87EE02B3D166C00DF2C01 /* piperttsAudioUnit.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01F87EDF2B3D166C00DF2C01 /* piperttsAudioUnit.swift */; };
+		01F87EE62B3D166C00DF2C01 /* AudioUnitFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01F87EE52B3D166C00DF2C01 /* AudioUnitFactory.swift */; };
+		01F87EEB2B3D166C00DF2C01 /* pipertts.appex in Embed Foundation Extensions */ = {isa = PBXBuildFile; fileRef = 01F87ED02B3D166C00DF2C01 /* pipertts.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		01F87EF12B3D169E00DF2C01 /* uk_UA-lada.onnx.json in Resources */ = {isa = PBXBuildFile; fileRef = 0181B8E12B0E69390030F36E /* uk_UA-lada.onnx.json */; };
+		01F87EF22B3D169E00DF2C01 /* uk_UA-lada.onnx in Resources */ = {isa = PBXBuildFile; fileRef = 0181B8E02B0E69390030F36E /* uk_UA-lada.onnx */; };
+		01F87EF32B3D16A200DF2C01 /* espeak-ng-data in Resources */ = {isa = PBXBuildFile; fileRef = 0181B8E42B0E70EC0030F36E /* espeak-ng-data */; };
+		01F87EF72B3D1A8A00DF2C01 /* CShort.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01F87EF62B3D1A8A00DF2C01 /* CShort.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		0181B8B42B0E50480030F36E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 0181B89B2B0E50470030F36E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 0181B8A22B0E50470030F36E;
+			remoteInfo = piperapp;
+		};
+		01F87EE82B3D166C00DF2C01 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 0181B89B2B0E50470030F36E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 01F87ECF2B3D166C00DF2C01;
+			remoteInfo = pipertts;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		01F87EEA2B3D166C00DF2C01 /* Embed Foundation Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				01F87EEB2B3D166C00DF2C01 /* pipertts.appex in Embed Foundation Extensions */,
+			);
+			name = "Embed Foundation Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		0181B8A32B0E50470030F36E /* piperapp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = piperapp.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		0181B8A62B0E50470030F36E /* piperappApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = piperappApp.swift; sourceTree = "<group>"; };
+		0181B8A82B0E50470030F36E /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		0181B8AA2B0E50480030F36E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		0181B8AD2B0E50480030F36E /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		0181B8B32B0E50480030F36E /* piperappTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = piperappTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		0181B8B72B0E50480030F36E /* piperappTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = piperappTests.swift; sourceTree = "<group>"; };
+		0181B8D32B0E538E0030F36E /* piperDemo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = piperDemo.swift; sourceTree = "<group>"; };
+		0181B8D62B0E54360030F36E /* libc++.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = "libc++.tbd"; path = "usr/lib/libc++.tbd"; sourceTree = SDKROOT; };
+		0181B8D82B0E55C00030F36E /* libc++.1.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = "libc++.1.tbd"; path = "usr/lib/libc++.1.tbd"; sourceTree = SDKROOT; };
+		0181B8E02B0E69390030F36E /* uk_UA-lada.onnx */ = {isa = PBXFileReference; lastKnownFileType = file; name = "uk_UA-lada.onnx"; path = "piperapp/uk_UA-lada.onnx"; sourceTree = "<group>"; };
+		0181B8E12B0E69390030F36E /* uk_UA-lada.onnx.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = "uk_UA-lada.onnx.json"; path = "piperapp/uk_UA-lada.onnx.json"; sourceTree = "<group>"; };
+		0181B8E42B0E70EC0030F36E /* espeak-ng-data */ = {isa = PBXFileReference; lastKnownFileType = folder; name = "espeak-ng-data"; path = "piperapp/espeak-ng-data"; sourceTree = "<group>"; };
+		01F87ED02B3D166C00DF2C01 /* pipertts.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = pipertts.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		01F87ED22B3D166C00DF2C01 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		01F87EDF2B3D166C00DF2C01 /* piperttsAudioUnit.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = piperttsAudioUnit.swift; sourceTree = "<group>"; };
+		01F87EE52B3D166C00DF2C01 /* AudioUnitFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AudioUnitFactory.swift; sourceTree = "<group>"; };
+		01F87EE72B3D166C00DF2C01 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		01F87EF62B3D1A8A00DF2C01 /* CShort.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CShort.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		0181B8A02B0E50470030F36E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0181B8B02B0E50480030F36E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		01F87ECD2B3D166C00DF2C01 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				01B411442B4F77F700C9F854 /* piper-objc in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		0181B89A2B0E50470030F36E = {
+			isa = PBXGroup;
+			children = (
+				0181B8E42B0E70EC0030F36E /* espeak-ng-data */,
+				0181B8E02B0E69390030F36E /* uk_UA-lada.onnx */,
+				0181B8E12B0E69390030F36E /* uk_UA-lada.onnx.json */,
+				0181B8A52B0E50470030F36E /* piperapp */,
+				01F87ED12B3D166C00DF2C01 /* pipertts */,
+				0181B8B62B0E50480030F36E /* piperappTests */,
+				0181B8A42B0E50470030F36E /* Products */,
+				0181B8D52B0E54360030F36E /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		0181B8A42B0E50470030F36E /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				0181B8A32B0E50470030F36E /* piperapp.app */,
+				0181B8B32B0E50480030F36E /* piperappTests.xctest */,
+				01F87ED02B3D166C00DF2C01 /* pipertts.appex */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		0181B8A52B0E50470030F36E /* piperapp */ = {
+			isa = PBXGroup;
+			children = (
+				0181B8A62B0E50470030F36E /* piperappApp.swift */,
+				0181B8A82B0E50470030F36E /* ContentView.swift */,
+				0181B8D32B0E538E0030F36E /* piperDemo.swift */,
+				0181B8AA2B0E50480030F36E /* Assets.xcassets */,
+				0181B8AC2B0E50480030F36E /* Preview Content */,
+			);
+			path = piperapp;
+			sourceTree = "<group>";
+		};
+		0181B8AC2B0E50480030F36E /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				0181B8AD2B0E50480030F36E /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		0181B8B62B0E50480030F36E /* piperappTests */ = {
+			isa = PBXGroup;
+			children = (
+				0181B8B72B0E50480030F36E /* piperappTests.swift */,
+			);
+			path = piperappTests;
+			sourceTree = "<group>";
+		};
+		0181B8D52B0E54360030F36E /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				0181B8D82B0E55C00030F36E /* libc++.1.tbd */,
+				0181B8D62B0E54360030F36E /* libc++.tbd */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		01F87ED12B3D166C00DF2C01 /* pipertts */ = {
+			isa = PBXGroup;
+			children = (
+				01F87ED22B3D166C00DF2C01 /* README.md */,
+				01F87EE72B3D166C00DF2C01 /* Info.plist */,
+				01F87ED42B3D166C00DF2C01 /* Common */,
+			);
+			path = pipertts;
+			sourceTree = "<group>";
+		};
+		01F87ED42B3D166C00DF2C01 /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				01F87ED92B3D166C00DF2C01 /* Utility */,
+				01F87EDE2B3D166C00DF2C01 /* Audio Unit */,
+				01F87EE42B3D166C00DF2C01 /* AudioUnitFactory */,
+			);
+			path = Common;
+			sourceTree = "<group>";
+		};
+		01F87ED92B3D166C00DF2C01 /* Utility */ = {
+			isa = PBXGroup;
+			children = (
+				01F87EF62B3D1A8A00DF2C01 /* CShort.swift */,
+			);
+			path = Utility;
+			sourceTree = "<group>";
+		};
+		01F87EDE2B3D166C00DF2C01 /* Audio Unit */ = {
+			isa = PBXGroup;
+			children = (
+				01F87EDF2B3D166C00DF2C01 /* piperttsAudioUnit.swift */,
+			);
+			path = "Audio Unit";
+			sourceTree = "<group>";
+		};
+		01F87EE42B3D166C00DF2C01 /* AudioUnitFactory */ = {
+			isa = PBXGroup;
+			children = (
+				01F87EE52B3D166C00DF2C01 /* AudioUnitFactory.swift */,
+			);
+			path = AudioUnitFactory;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		0181B8A22B0E50470030F36E /* piperapp */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 0181B8C72B0E50480030F36E /* Build configuration list for PBXNativeTarget "piperapp" */;
+			buildPhases = (
+				0181B89F2B0E50470030F36E /* Sources */,
+				0181B8A02B0E50470030F36E /* Frameworks */,
+				0181B8A12B0E50470030F36E /* Resources */,
+				01F87EEA2B3D166C00DF2C01 /* Embed Foundation Extensions */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				01F87EE92B3D166C00DF2C01 /* PBXTargetDependency */,
+			);
+			name = piperapp;
+			packageProductDependencies = (
+			);
+			productName = piperapp;
+			productReference = 0181B8A32B0E50470030F36E /* piperapp.app */;
+			productType = "com.apple.product-type.application";
+		};
+		0181B8B22B0E50480030F36E /* piperappTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 0181B8CA2B0E50480030F36E /* Build configuration list for PBXNativeTarget "piperappTests" */;
+			buildPhases = (
+				0181B8AF2B0E50480030F36E /* Sources */,
+				0181B8B02B0E50480030F36E /* Frameworks */,
+				0181B8B12B0E50480030F36E /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				0181B8B52B0E50480030F36E /* PBXTargetDependency */,
+			);
+			name = piperappTests;
+			productName = piperappTests;
+			productReference = 0181B8B32B0E50480030F36E /* piperappTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		01F87ECF2B3D166C00DF2C01 /* pipertts */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 01F87EEE2B3D166D00DF2C01 /* Build configuration list for PBXNativeTarget "pipertts" */;
+			buildPhases = (
+				01F87ECC2B3D166C00DF2C01 /* Sources */,
+				01F87ECD2B3D166C00DF2C01 /* Frameworks */,
+				01F87ECE2B3D166C00DF2C01 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = pipertts;
+			packageProductDependencies = (
+				01B411432B4F77F700C9F854 /* piper-objc */,
+			);
+			productName = pipertts;
+			productReference = 01F87ED02B3D166C00DF2C01 /* pipertts.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		0181B89B2B0E50470030F36E /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1510;
+				LastUpgradeCheck = 1500;
+				TargetAttributes = {
+					0181B8A22B0E50470030F36E = {
+						CreatedOnToolsVersion = 15.0.1;
+					};
+					0181B8B22B0E50480030F36E = {
+						CreatedOnToolsVersion = 15.0.1;
+						TestTargetID = 0181B8A22B0E50470030F36E;
+					};
+					01F87ECF2B3D166C00DF2C01 = {
+						CreatedOnToolsVersion = 15.1;
+					};
+				};
+			};
+			buildConfigurationList = 0181B89E2B0E50470030F36E /* Build configuration list for PBXProject "piperapp" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 0181B89A2B0E50470030F36E;
+			packageReferences = (
+				01B411422B4F77F700C9F854 /* XCRemoteSwiftPackageReference "piper-objc" */,
+			);
+			productRefGroup = 0181B8A42B0E50470030F36E /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				0181B8A22B0E50470030F36E /* piperapp */,
+				0181B8B22B0E50480030F36E /* piperappTests */,
+				01F87ECF2B3D166C00DF2C01 /* pipertts */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		0181B8A12B0E50470030F36E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0181B8AE2B0E50480030F36E /* Preview Assets.xcassets in Resources */,
+				0181B8AB2B0E50480030F36E /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0181B8B12B0E50480030F36E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		01F87ECE2B3D166C00DF2C01 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				01F87EF32B3D16A200DF2C01 /* espeak-ng-data in Resources */,
+				01F87EF22B3D169E00DF2C01 /* uk_UA-lada.onnx in Resources */,
+				01F87EF12B3D169E00DF2C01 /* uk_UA-lada.onnx.json in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		0181B89F2B0E50470030F36E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0181B8A92B0E50470030F36E /* ContentView.swift in Sources */,
+				0181B8D42B0E538E0030F36E /* piperDemo.swift in Sources */,
+				0181B8A72B0E50470030F36E /* piperappApp.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0181B8AF2B0E50480030F36E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0181B8B82B0E50480030F36E /* piperappTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		01F87ECC2B3D166C00DF2C01 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				01F87EE62B3D166C00DF2C01 /* AudioUnitFactory.swift in Sources */,
+				01F87EE02B3D166C00DF2C01 /* piperttsAudioUnit.swift in Sources */,
+				01F87EF72B3D1A8A00DF2C01 /* CShort.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		0181B8B52B0E50480030F36E /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 0181B8A22B0E50470030F36E /* piperapp */;
+			targetProxy = 0181B8B42B0E50480030F36E /* PBXContainerItemProxy */;
+		};
+		01F87EE92B3D166C00DF2C01 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 01F87ECF2B3D166C00DF2C01 /* pipertts */;
+			targetProxy = 01F87EE82B3D166C00DF2C01 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		0181B8C52B0E50480030F36E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.3;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		0181B8C62B0E50480030F36E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.3;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		0181B8C82B0E50480030F36E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_CXX_LANGUAGE_STANDARD = "c++17";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"piperapp/Preview Content\"";
+				DEVELOPMENT_TEAM = T4B4N4F7Q4;
+				ENABLE_PREVIEWS = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.ihorshevchuk.piperapp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_INSTALL_OBJC_HEADER = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		0181B8C92B0E50480030F36E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_CXX_LANGUAGE_STANDARD = "c++17";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"piperapp/Preview Content\"";
+				DEVELOPMENT_TEAM = T4B4N4F7Q4;
+				ENABLE_PREVIEWS = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.ihorshevchuk.piperapp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_INSTALL_OBJC_HEADER = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		0181B8CB2B0E50480030F36E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.ihorshevchuk.piperappTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/piperapp.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/piperapp";
+			};
+			name = Debug;
+		};
+		0181B8CC2B0E50480030F36E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.ihorshevchuk.piperappTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/piperapp.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/piperapp";
+			};
+			name = Release;
+		};
+		01F87EEC2B3D166D00DF2C01 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_CXX_LANGUAGE_STANDARD = "c++20";
+				CLANG_CXX_LIBRARY = "libc++";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = T4B4N4F7Q4;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = pipertts/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = pipertts;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.ihorshevchuk.piperapp.pipertts;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_INSTALL_OBJC_HEADER = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		01F87EED2B3D166D00DF2C01 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_CXX_LANGUAGE_STANDARD = "c++20";
+				CLANG_CXX_LIBRARY = "libc++";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = T4B4N4F7Q4;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = pipertts/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = pipertts;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.ihorshevchuk.piperapp.pipertts;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_INSTALL_OBJC_HEADER = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		0181B89E2B0E50470030F36E /* Build configuration list for PBXProject "piperapp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0181B8C52B0E50480030F36E /* Debug */,
+				0181B8C62B0E50480030F36E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		0181B8C72B0E50480030F36E /* Build configuration list for PBXNativeTarget "piperapp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0181B8C82B0E50480030F36E /* Debug */,
+				0181B8C92B0E50480030F36E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		0181B8CA2B0E50480030F36E /* Build configuration list for PBXNativeTarget "piperappTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0181B8CB2B0E50480030F36E /* Debug */,
+				0181B8CC2B0E50480030F36E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		01F87EEE2B3D166D00DF2C01 /* Build configuration list for PBXNativeTarget "pipertts" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				01F87EEC2B3D166D00DF2C01 /* Debug */,
+				01F87EED2B3D166D00DF2C01 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		01B411422B4F77F700C9F854 /* XCRemoteSwiftPackageReference "piper-objc" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/IhorShevchuk/piper-objc";
+			requirement = {
+				kind = revision;
+				revision = f1e0e5b54b88589dd21fe63ede222045c13e5e6f;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		01B411432B4F77F700C9F854 /* piper-objc */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 01B411422B4F77F700C9F854 /* XCRemoteSwiftPackageReference "piper-objc" */;
+			productName = "piper-objc";
+		};
+/* End XCSwiftPackageProductDependency section */
+	};
+	rootObject = 0181B89B2B0E50470030F36E /* Project object */;
+}
