@@ -712,7 +712,7 @@
 			repositoryURL = "https://github.com/IhorShevchuk/piper-objc";
 			requirement = {
 				kind = revision;
-				revision = f1e0e5b54b88589dd21fe63ede222045c13e5e6f;
+				revision = e09fb943a782e02282ce8f8b1455c3ca23dca09e;
 			};
 		};
 /* End XCRemoteSwiftPackageReference section */
