@@ -15,8 +15,8 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "0181B8A22B0E50470030F36E"
-               BuildableName = "piperapp.app"
-               BlueprintName = "piperapp"
+               BuildableName = "PiperAapp.app"
+               BlueprintName = "PiperAapp"
                ReferencedContainer = "container:piperapp.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
@@ -35,8 +35,8 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "0181B8B22B0E50480030F36E"
-               BuildableName = "piperappTests.xctest"
-               BlueprintName = "piperappTests"
+               BuildableName = "PiperAppTests.xctest"
+               BlueprintName = "PiperAppTests"
                ReferencedContainer = "container:piperapp.xcodeproj">
             </BuildableReference>
          </TestableReference>
@@ -68,8 +68,8 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "0181B8A22B0E50470030F36E"
-            BuildableName = "piperapp.app"
-            BlueprintName = "piperapp"
+            BuildableName = "PiperAapp.app"
+            BlueprintName = "PiperAapp"
             ReferencedContainer = "container:piperapp.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
@@ -85,8 +85,8 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "0181B8A22B0E50470030F36E"
-            BuildableName = "piperapp.app"
-            BlueprintName = "piperapp"
+            BuildableName = "PiperAapp.app"
+            BlueprintName = "PiperAapp"
             ReferencedContainer = "container:piperapp.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>

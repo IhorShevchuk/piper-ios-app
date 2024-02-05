@@ -14,9 +14,11 @@
 		0181B8B82B0E50480030F36E /* piperappTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0181B8B72B0E50480030F36E /* piperappTests.swift */; };
 		0181B8D42B0E538E0030F36E /* piperDemo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0181B8D32B0E538E0030F36E /* piperDemo.swift */; };
 		01E4FA052B707BDD00EC18C3 /* piper-objc in Frameworks */ = {isa = PBXBuildFile; productRef = 01E4FA042B707BDD00EC18C3 /* piper-objc */; };
-		01F87EE02B3D166C00DF2C01 /* piperttsAudioUnit.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01F87EDF2B3D166C00DF2C01 /* piperttsAudioUnit.swift */; };
+		01E4FA132B707D4000EC18C3 /* Logger.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01E4FA122B707D4000EC18C3 /* Logger.swift */; };
+		01E4FA192B70819F00EC18C3 /* PiperappUtils.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 01E4FA0B2B707CEC00EC18C3 /* PiperappUtils.framework */; };
+		01F87EE02B3D166C00DF2C01 /* PiperttsAudioUnit.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01F87EDF2B3D166C00DF2C01 /* PiperttsAudioUnit.swift */; };
 		01F87EE62B3D166C00DF2C01 /* AudioUnitFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01F87EE52B3D166C00DF2C01 /* AudioUnitFactory.swift */; };
-		01F87EEB2B3D166C00DF2C01 /* pipertts.appex in Embed Foundation Extensions */ = {isa = PBXBuildFile; fileRef = 01F87ED02B3D166C00DF2C01 /* pipertts.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		01F87EEB2B3D166C00DF2C01 /* PiperTTS.appex in Embed Foundation Extensions */ = {isa = PBXBuildFile; fileRef = 01F87ED02B3D166C00DF2C01 /* PiperTTS.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		01F87EF12B3D169E00DF2C01 /* uk_UA-lada.onnx.json in Resources */ = {isa = PBXBuildFile; fileRef = 0181B8E12B0E69390030F36E /* uk_UA-lada.onnx.json */; };
 		01F87EF22B3D169E00DF2C01 /* uk_UA-lada.onnx in Resources */ = {isa = PBXBuildFile; fileRef = 0181B8E02B0E69390030F36E /* uk_UA-lada.onnx */; };
 		01F87EF32B3D16A200DF2C01 /* espeak-ng-data in Resources */ = {isa = PBXBuildFile; fileRef = 0181B8E42B0E70EC0030F36E /* espeak-ng-data */; };
@@ -30,6 +32,13 @@
 			proxyType = 1;
 			remoteGlobalIDString = 0181B8A22B0E50470030F36E;
 			remoteInfo = piperapp;
+		};
+		01E4FA1B2B70819F00EC18C3 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 0181B89B2B0E50470030F36E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 01E4FA0A2B707CEC00EC18C3;
+			remoteInfo = PiperappUtils;
 		};
 		01F87EE82B3D166C00DF2C01 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
@@ -47,7 +56,7 @@
 			dstPath = "";
 			dstSubfolderSpec = 13;
 			files = (
-				01F87EEB2B3D166C00DF2C01 /* pipertts.appex in Embed Foundation Extensions */,
+				01F87EEB2B3D166C00DF2C01 /* PiperTTS.appex in Embed Foundation Extensions */,
 			);
 			name = "Embed Foundation Extensions";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -55,12 +64,12 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
-		0181B8A32B0E50470030F36E /* piperapp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = piperapp.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		0181B8A32B0E50470030F36E /* PiperAapp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PiperAapp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0181B8A62B0E50470030F36E /* piperappApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = piperappApp.swift; sourceTree = "<group>"; };
 		0181B8A82B0E50470030F36E /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		0181B8AA2B0E50480030F36E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		0181B8AD2B0E50480030F36E /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
-		0181B8B32B0E50480030F36E /* piperappTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = piperappTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		0181B8B32B0E50480030F36E /* PiperAppTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PiperAppTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		0181B8B72B0E50480030F36E /* piperappTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = piperappTests.swift; sourceTree = "<group>"; };
 		0181B8D32B0E538E0030F36E /* piperDemo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = piperDemo.swift; sourceTree = "<group>"; };
 		0181B8D62B0E54360030F36E /* libc++.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = "libc++.tbd"; path = "usr/lib/libc++.tbd"; sourceTree = SDKROOT; };
@@ -68,8 +77,11 @@
 		0181B8E02B0E69390030F36E /* uk_UA-lada.onnx */ = {isa = PBXFileReference; lastKnownFileType = file; name = "uk_UA-lada.onnx"; path = "piperapp/uk_UA-lada.onnx"; sourceTree = "<group>"; };
 		0181B8E12B0E69390030F36E /* uk_UA-lada.onnx.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = "uk_UA-lada.onnx.json"; path = "piperapp/uk_UA-lada.onnx.json"; sourceTree = "<group>"; };
 		0181B8E42B0E70EC0030F36E /* espeak-ng-data */ = {isa = PBXFileReference; lastKnownFileType = folder; name = "espeak-ng-data"; path = "piperapp/espeak-ng-data"; sourceTree = "<group>"; };
-		01F87ED02B3D166C00DF2C01 /* pipertts.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = pipertts.appex; sourceTree = BUILT_PRODUCTS_DIR; };
-		01F87EDF2B3D166C00DF2C01 /* piperttsAudioUnit.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = piperttsAudioUnit.swift; sourceTree = "<group>"; };
+		01E4FA0B2B707CEC00EC18C3 /* PiperappUtils.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = PiperappUtils.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		01E4FA122B707D4000EC18C3 /* Logger.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Logger.swift; sourceTree = "<group>"; };
+		01E4FA172B707E5100EC18C3 /* libc++.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = "libc++.tbd"; path = "Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.2.sdk/usr/lib/libc++.tbd"; sourceTree = DEVELOPER_DIR; };
+		01F87ED02B3D166C00DF2C01 /* PiperTTS.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = PiperTTS.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		01F87EDF2B3D166C00DF2C01 /* PiperttsAudioUnit.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PiperttsAudioUnit.swift; sourceTree = "<group>"; };
 		01F87EE52B3D166C00DF2C01 /* AudioUnitFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AudioUnitFactory.swift; sourceTree = "<group>"; };
 		01F87EE72B3D166C00DF2C01 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		01F87EF62B3D1A8A00DF2C01 /* CShort.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CShort.swift; sourceTree = "<group>"; };
@@ -90,11 +102,19 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		01E4FA082B707CEC00EC18C3 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		01F87ECD2B3D166C00DF2C01 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				01E4FA052B707BDD00EC18C3 /* piper-objc in Frameworks */,
+				01E4FA192B70819F00EC18C3 /* PiperappUtils.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -107,9 +127,10 @@
 				0181B8E42B0E70EC0030F36E /* espeak-ng-data */,
 				0181B8E02B0E69390030F36E /* uk_UA-lada.onnx */,
 				0181B8E12B0E69390030F36E /* uk_UA-lada.onnx.json */,
-				0181B8A52B0E50470030F36E /* piperapp */,
-				01F87ED12B3D166C00DF2C01 /* pipertts */,
-				0181B8B62B0E50480030F36E /* piperappTests */,
+				0181B8A52B0E50470030F36E /* PiperApp */,
+				01F87ED12B3D166C00DF2C01 /* PiperTTS */,
+				0181B8B62B0E50480030F36E /* PiperAppTests */,
+				01E4FA0C2B707CEC00EC18C3 /* PiperappUtils */,
 				0181B8A42B0E50470030F36E /* Products */,
 				0181B8D52B0E54360030F36E /* Frameworks */,
 			);
@@ -118,14 +139,15 @@
 		0181B8A42B0E50470030F36E /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				0181B8A32B0E50470030F36E /* piperapp.app */,
-				0181B8B32B0E50480030F36E /* piperappTests.xctest */,
-				01F87ED02B3D166C00DF2C01 /* pipertts.appex */,
+				0181B8A32B0E50470030F36E /* PiperAapp.app */,
+				0181B8B32B0E50480030F36E /* PiperAppTests.xctest */,
+				01F87ED02B3D166C00DF2C01 /* PiperTTS.appex */,
+				01E4FA0B2B707CEC00EC18C3 /* PiperappUtils.framework */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		0181B8A52B0E50470030F36E /* piperapp */ = {
+		0181B8A52B0E50470030F36E /* PiperApp */ = {
 			isa = PBXGroup;
 			children = (
 				0181B8A62B0E50470030F36E /* piperappApp.swift */,
@@ -134,7 +156,7 @@
 				0181B8AA2B0E50480030F36E /* Assets.xcassets */,
 				0181B8AC2B0E50480030F36E /* Preview Content */,
 			);
-			path = piperapp;
+			path = PiperApp;
 			sourceTree = "<group>";
 		};
 		0181B8AC2B0E50480030F36E /* Preview Content */ = {
@@ -145,30 +167,39 @@
 			path = "Preview Content";
 			sourceTree = "<group>";
 		};
-		0181B8B62B0E50480030F36E /* piperappTests */ = {
+		0181B8B62B0E50480030F36E /* PiperAppTests */ = {
 			isa = PBXGroup;
 			children = (
 				0181B8B72B0E50480030F36E /* piperappTests.swift */,
 			);
-			path = piperappTests;
+			path = PiperAppTests;
 			sourceTree = "<group>";
 		};
 		0181B8D52B0E54360030F36E /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				01E4FA172B707E5100EC18C3 /* libc++.tbd */,
 				0181B8D82B0E55C00030F36E /* libc++.1.tbd */,
 				0181B8D62B0E54360030F36E /* libc++.tbd */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		01F87ED12B3D166C00DF2C01 /* pipertts */ = {
+		01E4FA0C2B707CEC00EC18C3 /* PiperappUtils */ = {
+			isa = PBXGroup;
+			children = (
+				01E4FA122B707D4000EC18C3 /* Logger.swift */,
+			);
+			path = PiperappUtils;
+			sourceTree = "<group>";
+		};
+		01F87ED12B3D166C00DF2C01 /* PiperTTS */ = {
 			isa = PBXGroup;
 			children = (
 				01F87EE72B3D166C00DF2C01 /* Info.plist */,
 				01F87ED42B3D166C00DF2C01 /* Common */,
 			);
-			path = pipertts;
+			path = PiperTTS;
 			sourceTree = "<group>";
 		};
 		01F87ED42B3D166C00DF2C01 /* Common */ = {
@@ -192,7 +223,7 @@
 		01F87EDE2B3D166C00DF2C01 /* Audio Unit */ = {
 			isa = PBXGroup;
 			children = (
-				01F87EDF2B3D166C00DF2C01 /* piperttsAudioUnit.swift */,
+				01F87EDF2B3D166C00DF2C01 /* PiperttsAudioUnit.swift */,
 			);
 			path = "Audio Unit";
 			sourceTree = "<group>";
@@ -207,10 +238,20 @@
 		};
 /* End PBXGroup section */
 
+/* Begin PBXHeadersBuildPhase section */
+		01E4FA062B707CEC00EC18C3 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
 /* Begin PBXNativeTarget section */
-		0181B8A22B0E50470030F36E /* piperapp */ = {
+		0181B8A22B0E50470030F36E /* PiperAapp */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 0181B8C72B0E50480030F36E /* Build configuration list for PBXNativeTarget "piperapp" */;
+			buildConfigurationList = 0181B8C72B0E50480030F36E /* Build configuration list for PBXNativeTarget "PiperAapp" */;
 			buildPhases = (
 				0181B89F2B0E50470030F36E /* Sources */,
 				0181B8A02B0E50470030F36E /* Frameworks */,
@@ -222,16 +263,16 @@
 			dependencies = (
 				01F87EE92B3D166C00DF2C01 /* PBXTargetDependency */,
 			);
-			name = piperapp;
+			name = PiperAapp;
 			packageProductDependencies = (
 			);
 			productName = piperapp;
-			productReference = 0181B8A32B0E50470030F36E /* piperapp.app */;
+			productReference = 0181B8A32B0E50470030F36E /* PiperAapp.app */;
 			productType = "com.apple.product-type.application";
 		};
-		0181B8B22B0E50480030F36E /* piperappTests */ = {
+		0181B8B22B0E50480030F36E /* PiperAppTests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 0181B8CA2B0E50480030F36E /* Build configuration list for PBXNativeTarget "piperappTests" */;
+			buildConfigurationList = 0181B8CA2B0E50480030F36E /* Build configuration list for PBXNativeTarget "PiperAppTests" */;
 			buildPhases = (
 				0181B8AF2B0E50480030F36E /* Sources */,
 				0181B8B02B0E50480030F36E /* Frameworks */,
@@ -242,14 +283,34 @@
 			dependencies = (
 				0181B8B52B0E50480030F36E /* PBXTargetDependency */,
 			);
-			name = piperappTests;
+			name = PiperAppTests;
 			productName = piperappTests;
-			productReference = 0181B8B32B0E50480030F36E /* piperappTests.xctest */;
+			productReference = 0181B8B32B0E50480030F36E /* PiperAppTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
-		01F87ECF2B3D166C00DF2C01 /* pipertts */ = {
+		01E4FA0A2B707CEC00EC18C3 /* PiperappUtils */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 01F87EEE2B3D166D00DF2C01 /* Build configuration list for PBXNativeTarget "pipertts" */;
+			buildConfigurationList = 01E4FA0F2B707CEC00EC18C3 /* Build configuration list for PBXNativeTarget "PiperappUtils" */;
+			buildPhases = (
+				01E4FA062B707CEC00EC18C3 /* Headers */,
+				01E4FA072B707CEC00EC18C3 /* Sources */,
+				01E4FA082B707CEC00EC18C3 /* Frameworks */,
+				01E4FA092B707CEC00EC18C3 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = PiperappUtils;
+			packageProductDependencies = (
+			);
+			productName = PiperappUtils;
+			productReference = 01E4FA0B2B707CEC00EC18C3 /* PiperappUtils.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		01F87ECF2B3D166C00DF2C01 /* PiperTTS */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 01F87EEE2B3D166D00DF2C01 /* Build configuration list for PBXNativeTarget "PiperTTS" */;
 			buildPhases = (
 				01F87ECC2B3D166C00DF2C01 /* Sources */,
 				01F87ECD2B3D166C00DF2C01 /* Frameworks */,
@@ -258,13 +319,14 @@
 			buildRules = (
 			);
 			dependencies = (
+				01E4FA1C2B70819F00EC18C3 /* PBXTargetDependency */,
 			);
-			name = pipertts;
+			name = PiperTTS;
 			packageProductDependencies = (
 				01E4FA042B707BDD00EC18C3 /* piper-objc */,
 			);
 			productName = pipertts;
-			productReference = 01F87ED02B3D166C00DF2C01 /* pipertts.appex */;
+			productReference = 01F87ED02B3D166C00DF2C01 /* PiperTTS.appex */;
 			productType = "com.apple.product-type.app-extension";
 		};
 /* End PBXNativeTarget section */
@@ -283,6 +345,10 @@
 					0181B8B22B0E50480030F36E = {
 						CreatedOnToolsVersion = 15.0.1;
 						TestTargetID = 0181B8A22B0E50470030F36E;
+					};
+					01E4FA0A2B707CEC00EC18C3 = {
+						CreatedOnToolsVersion = 15.2;
+						LastSwiftMigration = 1520;
 					};
 					01F87ECF2B3D166C00DF2C01 = {
 						CreatedOnToolsVersion = 15.1;
@@ -305,9 +371,10 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				0181B8A22B0E50470030F36E /* piperapp */,
-				0181B8B22B0E50480030F36E /* piperappTests */,
-				01F87ECF2B3D166C00DF2C01 /* pipertts */,
+				0181B8A22B0E50470030F36E /* PiperAapp */,
+				0181B8B22B0E50480030F36E /* PiperAppTests */,
+				01F87ECF2B3D166C00DF2C01 /* PiperTTS */,
+				01E4FA0A2B707CEC00EC18C3 /* PiperappUtils */,
 			);
 		};
 /* End PBXProject section */
@@ -323,6 +390,13 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 		0181B8B12B0E50480030F36E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		01E4FA092B707CEC00EC18C3 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -360,12 +434,20 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		01E4FA072B707CEC00EC18C3 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				01E4FA132B707D4000EC18C3 /* Logger.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		01F87ECC2B3D166C00DF2C01 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				01F87EE62B3D166C00DF2C01 /* AudioUnitFactory.swift in Sources */,
-				01F87EE02B3D166C00DF2C01 /* piperttsAudioUnit.swift in Sources */,
+				01F87EE02B3D166C00DF2C01 /* PiperttsAudioUnit.swift in Sources */,
 				01F87EF72B3D1A8A00DF2C01 /* CShort.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -375,12 +457,17 @@
 /* Begin PBXTargetDependency section */
 		0181B8B52B0E50480030F36E /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 0181B8A22B0E50470030F36E /* piperapp */;
+			target = 0181B8A22B0E50470030F36E /* PiperAapp */;
 			targetProxy = 0181B8B42B0E50480030F36E /* PBXContainerItemProxy */;
+		};
+		01E4FA1C2B70819F00EC18C3 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 01E4FA0A2B707CEC00EC18C3 /* PiperappUtils */;
+			targetProxy = 01E4FA1B2B70819F00EC18C3 /* PBXContainerItemProxy */;
 		};
 		01F87EE92B3D166C00DF2C01 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 01F87ECF2B3D166C00DF2C01 /* pipertts */;
+			target = 01F87ECF2B3D166C00DF2C01 /* PiperTTS */;
 			targetProxy = 01F87EE82B3D166C00DF2C01 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
@@ -393,7 +480,7 @@
 				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
-				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_CXX_LANGUAGE_STANDARD = "c++17";
 				CLANG_ENABLE_MODULES = YES;
 				CLANG_ENABLE_OBJC_ARC = YES;
 				CLANG_ENABLE_OBJC_WEAK = YES;
@@ -424,7 +511,7 @@
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_TESTABILITY = YES;
 				ENABLE_USER_SCRIPT_SANDBOXING = YES;
-				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_C_LANGUAGE_STANDARD = c17;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_NO_COMMON_BLOCKS = YES;
 				GCC_OPTIMIZATION_LEVEL = 0;
@@ -456,7 +543,7 @@
 				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
-				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_CXX_LANGUAGE_STANDARD = "c++17";
 				CLANG_ENABLE_MODULES = YES;
 				CLANG_ENABLE_OBJC_ARC = YES;
 				CLANG_ENABLE_OBJC_WEAK = YES;
@@ -487,7 +574,7 @@
 				ENABLE_NS_ASSERTIONS = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_USER_SCRIPT_SANDBOXING = YES;
-				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_C_LANGUAGE_STANDARD = c17;
 				GCC_NO_COMMON_BLOCKS = YES;
 				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
@@ -511,13 +598,11 @@
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
-				CLANG_CXX_LANGUAGE_STANDARD = "c++17";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"piperapp/Preview Content\"";
 				DEVELOPMENT_TEAM = T4B4N4F7Q4;
 				ENABLE_PREVIEWS = YES;
-				GCC_C_LANGUAGE_STANDARD = gnu17;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
@@ -544,13 +629,11 @@
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
-				CLANG_CXX_LANGUAGE_STANDARD = "c++17";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"piperapp/Preview Content\"";
 				DEVELOPMENT_TEAM = T4B4N4F7Q4;
 				ENABLE_PREVIEWS = YES;
-				GCC_C_LANGUAGE_STANDARD = gnu17;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
@@ -607,10 +690,74 @@
 			};
 			name = Release;
 		};
+		01E4FA102B707CEC00EC18C3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_MODULE_VERIFIER = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.ihorshevchuk.PiperappUtils;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		01E4FA112B707CEC00EC18C3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_MODULE_VERIFIER = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.ihorshevchuk.PiperappUtils;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
 		01F87EEC2B3D166D00DF2C01 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				CLANG_CXX_LANGUAGE_STANDARD = "c++20";
 				CLANG_CXX_LIBRARY = "libc++";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
@@ -638,7 +785,6 @@
 		01F87EED2B3D166D00DF2C01 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				CLANG_CXX_LANGUAGE_STANDARD = "c++20";
 				CLANG_CXX_LIBRARY = "libc++";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
@@ -675,7 +821,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		0181B8C72B0E50480030F36E /* Build configuration list for PBXNativeTarget "piperapp" */ = {
+		0181B8C72B0E50480030F36E /* Build configuration list for PBXNativeTarget "PiperAapp" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				0181B8C82B0E50480030F36E /* Debug */,
@@ -684,7 +830,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		0181B8CA2B0E50480030F36E /* Build configuration list for PBXNativeTarget "piperappTests" */ = {
+		0181B8CA2B0E50480030F36E /* Build configuration list for PBXNativeTarget "PiperAppTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				0181B8CB2B0E50480030F36E /* Debug */,
@@ -693,7 +839,16 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		01F87EEE2B3D166D00DF2C01 /* Build configuration list for PBXNativeTarget "pipertts" */ = {
+		01E4FA0F2B707CEC00EC18C3 /* Build configuration list for PBXNativeTarget "PiperappUtils" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				01E4FA102B707CEC00EC18C3 /* Debug */,
+				01E4FA112B707CEC00EC18C3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		01F87EEE2B3D166D00DF2C01 /* Build configuration list for PBXNativeTarget "PiperTTS" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				01F87EEC2B3D166D00DF2C01 /* Debug */,
