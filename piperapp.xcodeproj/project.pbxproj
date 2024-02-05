@@ -13,7 +13,7 @@
 		0181B8AE2B0E50480030F36E /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0181B8AD2B0E50480030F36E /* Preview Assets.xcassets */; };
 		0181B8B82B0E50480030F36E /* piperappTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0181B8B72B0E50480030F36E /* piperappTests.swift */; };
 		0181B8D42B0E538E0030F36E /* piperDemo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0181B8D32B0E538E0030F36E /* piperDemo.swift */; };
-		01B411442B4F77F700C9F854 /* piper-objc in Frameworks */ = {isa = PBXBuildFile; productRef = 01B411432B4F77F700C9F854 /* piper-objc */; };
+		01E4FA052B707BDD00EC18C3 /* piper-objc in Frameworks */ = {isa = PBXBuildFile; productRef = 01E4FA042B707BDD00EC18C3 /* piper-objc */; };
 		01F87EE02B3D166C00DF2C01 /* piperttsAudioUnit.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01F87EDF2B3D166C00DF2C01 /* piperttsAudioUnit.swift */; };
 		01F87EE62B3D166C00DF2C01 /* AudioUnitFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01F87EE52B3D166C00DF2C01 /* AudioUnitFactory.swift */; };
 		01F87EEB2B3D166C00DF2C01 /* pipertts.appex in Embed Foundation Extensions */ = {isa = PBXBuildFile; fileRef = 01F87ED02B3D166C00DF2C01 /* pipertts.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
@@ -69,7 +69,6 @@
 		0181B8E12B0E69390030F36E /* uk_UA-lada.onnx.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = "uk_UA-lada.onnx.json"; path = "piperapp/uk_UA-lada.onnx.json"; sourceTree = "<group>"; };
 		0181B8E42B0E70EC0030F36E /* espeak-ng-data */ = {isa = PBXFileReference; lastKnownFileType = folder; name = "espeak-ng-data"; path = "piperapp/espeak-ng-data"; sourceTree = "<group>"; };
 		01F87ED02B3D166C00DF2C01 /* pipertts.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = pipertts.appex; sourceTree = BUILT_PRODUCTS_DIR; };
-		01F87ED22B3D166C00DF2C01 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		01F87EDF2B3D166C00DF2C01 /* piperttsAudioUnit.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = piperttsAudioUnit.swift; sourceTree = "<group>"; };
 		01F87EE52B3D166C00DF2C01 /* AudioUnitFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AudioUnitFactory.swift; sourceTree = "<group>"; };
 		01F87EE72B3D166C00DF2C01 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -95,7 +94,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				01B411442B4F77F700C9F854 /* piper-objc in Frameworks */,
+				01E4FA052B707BDD00EC18C3 /* piper-objc in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -166,7 +165,6 @@
 		01F87ED12B3D166C00DF2C01 /* pipertts */ = {
 			isa = PBXGroup;
 			children = (
-				01F87ED22B3D166C00DF2C01 /* README.md */,
 				01F87EE72B3D166C00DF2C01 /* Info.plist */,
 				01F87ED42B3D166C00DF2C01 /* Common */,
 			);
@@ -263,7 +261,7 @@
 			);
 			name = pipertts;
 			packageProductDependencies = (
-				01B411432B4F77F700C9F854 /* piper-objc */,
+				01E4FA042B707BDD00EC18C3 /* piper-objc */,
 			);
 			productName = pipertts;
 			productReference = 01F87ED02B3D166C00DF2C01 /* pipertts.appex */;
@@ -301,7 +299,7 @@
 			);
 			mainGroup = 0181B89A2B0E50470030F36E;
 			packageReferences = (
-				01B411422B4F77F700C9F854 /* XCRemoteSwiftPackageReference "piper-objc" */,
+				01E4FA032B707B2C00EC18C3 /* XCRemoteSwiftPackageReference "piper-objc" */,
 			);
 			productRefGroup = 0181B8A42B0E50470030F36E /* Products */;
 			projectDirPath = "";
@@ -707,20 +705,20 @@
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
-		01B411422B4F77F700C9F854 /* XCRemoteSwiftPackageReference "piper-objc" */ = {
+		01E4FA032B707B2C00EC18C3 /* XCRemoteSwiftPackageReference "piper-objc" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/IhorShevchuk/piper-objc";
 			requirement = {
 				kind = revision;
-				revision = d5e289c4ed64e787a67ef7db6bd88e6176971be5;
+				revision = 764750119d3493fab9a07237609272ba041cc089;
 			};
 		};
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
-		01B411432B4F77F700C9F854 /* piper-objc */ = {
+		01E4FA042B707BDD00EC18C3 /* piper-objc */ = {
 			isa = XCSwiftPackageProductDependency;
-			package = 01B411422B4F77F700C9F854 /* XCRemoteSwiftPackageReference "piper-objc" */;
+			package = 01E4FA032B707B2C00EC18C3 /* XCRemoteSwiftPackageReference "piper-objc" */;
 			productName = "piper-objc";
 		};
 /* End XCSwiftPackageProductDependency section */

@@ -22,9 +22,8 @@ class PiperDemo: NSObject {
             return v.identifier == "com.ihorshevchuk.piperapp.pipertts.pipertts"
         }
 
-        let ut = AVSpeechUtterance(string: "Тестування голосу Лада, всім привіт!")
+        let ut = AVSpeechUtterance(string: "Тестування голосу Лада, всім привіт! Test Latin chars")
         ut.voice = voice
         synt.speak(ut)
     }
 }
-
