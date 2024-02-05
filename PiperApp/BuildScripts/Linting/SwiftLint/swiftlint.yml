@@ -1,0 +1,69 @@
+disabled_rules: # rule identifiers to exclude from running
+  - todo
+  - file_header
+opt_in_rules: # list of the rules that are disabled by default BUT enabled by our team
+  - closing_brace
+  - opening_brace
+  - return_arrow_whitespace
+  - trailing_semicolon
+  - statement_position
+  - explicit_init
+  - shorthand_operator
+  - deployment_target
+  - duplicate_imports
+  - empty_string
+  - overridden_super_call
+  - prohibited_super_call
+  - protocol_property_accessors_order
+  - redundant_objc_attribute
+  - redundant_type_annotation
+  - empty_count
+  - array_init
+  - function_body_length
+  - cyclomatic_complexity
+  # Find all the available rules by running:
+  # swiftlint rules
+analyzer_rules:
+  - unused_import
+included: # paths to include during linting. `--path` is ignored if present.
+excluded: # paths to ignore during linting. Takes precedence over `included`.
+  - ${SRCROOT}/fastlane
+  - ${SRCROOT}/BuildOutput
+  - ${SRCROOT}/BuildDerivedData
+  - ${SRCROOT}/Dependencies
+
+# configurable rules can be customized from this configuration file
+# binary rules can set their severity level
+trailing_semicolon: error
+closing_brace: error
+opening_brace:
+  severity: error
+return_arrow_whitespace: error
+statement_position: 
+  severity: error
+colon:
+  severity: error
+comma: error
+force_try: error
+force_cast: error
+
+line_length: 1000
+type_name: 
+  max_length:
+    warning: 100
+    error: 150
+    
+function_body_length:
+  warning: 50
+  error: 100
+
+cyclomatic_complexity:
+  ignores_case_statements: true
+  
+identifier_name:
+  allowed_symbols: [_]
+  
+trailing_whitespace:
+  ignores_empty_lines: true
+
+reporter: ${REPORT_TYPE} # reporter type (xcode, json, csv, checkstyle)

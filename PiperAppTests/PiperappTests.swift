@@ -1,5 +1,5 @@
 //
-//  piperappTests.swift
+//  PiperappTests.swift
 //  piperappTests
 //
 //  Created by Ihor Shevchuk on 22.11.2023.
@@ -8,7 +8,7 @@
 import XCTest
 @testable import piperapp
 
-final class piperappTests: XCTestCase {
+final class PiperappTests: XCTestCase {
 
     override func setUpWithError() throws {
         // Put setup code here. This method is called before the invocation of each test method in the class.

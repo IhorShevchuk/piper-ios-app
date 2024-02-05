@@ -18,12 +18,12 @@ class PiperDemo: NSObject {
 
     func doJob() {
 
-        let voice = AVSpeechSynthesisVoice.speechVoices().first { v in
-            return v.identifier == "com.ihorshevchuk.piperapp.pipertts.pipertts"
+        let voice = AVSpeechSynthesisVoice.speechVoices().first { voiceInArray in
+            return voiceInArray.identifier == "com.ihorshevchuk.piperapp.pipertts.pipertts"
         }
 
-        let ut = AVSpeechUtterance(string: "Тестування голосу Лада, всім привіт! Test Latin chars")
-        ut.voice = voice
-        synt.speak(ut)
+        let utterance = AVSpeechUtterance(string: "Тестування голосу Лада, всім привіт! Test Latin chars")
+        utterance.voice = voice
+        synt.speak(utterance)
     }
 }

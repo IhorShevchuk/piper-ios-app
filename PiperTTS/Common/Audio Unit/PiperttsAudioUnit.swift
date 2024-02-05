@@ -13,29 +13,19 @@ import AVFoundation
 import piper_objc
 import PiperappUtils
 
-public class PiperttsAudioUnit: AVSpeechSynthesisProviderAudioUnit
-{
+public class PiperttsAudioUnit: AVSpeechSynthesisProviderAudioUnit {
     private var outputBus: AUAudioUnitBus
     private var _outputBusses: AUAudioUnitBusArray!
     
     private var request: AVSpeechSynthesisProviderRequest?
 
-    private var format:AVAudioFormat
+    private var format: AVAudioFormat
 
-    var piper:Piper? = nil
+    var piper: Piper?
 
     @objc override init(componentDescription: AudioComponentDescription, options: AudioComponentInstantiationOptions) throws {
-        let basicDescription = AudioStreamBasicDescription(mSampleRate: 16000.0,
-														   mFormatID: kAudioFormatLinearPCM,
-														   mFormatFlags: kAudioFormatFlagsNativeFloatPacked | kAudioFormatFlagIsNonInterleaved,
-														   mBytesPerPacket: 4,
-														   mFramesPerPacket: 1,
-														   mBytesPerFrame: 4,
-														   mChannelsPerFrame: 1,
-														   mBitsPerChannel: 32,
-														   mReserved: 0);
 
-        self.format = AVAudioFormat(cmAudioFormatDescription: try! CMAudioFormatDescription(audioStreamBasicDescription: basicDescription));
+        self.format = AVAudioFormat(commonFormat: .pcmFormatFloat32, sampleRate: 16000.0, channels: 1, interleaved: true)!
 
         outputBus = try AUAudioUnitBus(format: self.format)
         try super.init(componentDescription: componentDescription, options: options)
@@ -52,7 +42,7 @@ public class PiperttsAudioUnit: AVSpeechSynthesisProviderAudioUnit
         if piper == nil {
             let model = Bundle.main.path(forResource: "uk_UA-lada", ofType: "onnx")!
             let config = Bundle.main.path(forResource: "uk_UA-lada.onnx", ofType: "json")!
-            piper = Piper(modelPath:model, andConfigPath: config)
+            piper = Piper(modelPath: model, andConfigPath: config)
         }
     }
 
@@ -61,14 +51,13 @@ public class PiperttsAudioUnit: AVSpeechSynthesisProviderAudioUnit
         piper = nil
     }
 
-	// MARK:- Rendering
+	// MARK: - Rendering
 	/*
-	 NOTE:- It is only safe to use Swift for audio rendering in this case, as Audio Unit Speech Extensions process offline. 
+	 NOTE:- It is only safe to use Swift for audio rendering in this case, as Audio Unit Speech Extensions process offline.
 	 (Swift is not usually recommended for processing on the realtime audio thread)
 	 */
-    public override var internalRenderBlock: AUInternalRenderBlock
-    {
-        return { [weak self] actionFlags, timestamp, frameCount, outputBusNumber, outputAudioBufferList, _, _ in
+    public override var internalRenderBlock: AUInternalRenderBlock {
+        return { [weak self] actionFlags, _, frameCount, _, outputAudioBufferList, _, _ in
 
             guard let self = self,
             let piper = self.piper else {
