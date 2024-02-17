@@ -1,0 +1,68 @@
+{
+  "pins" : [
+    {
+      "identity" : "espeak-ng-spm",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/IhorShevchuk/espeak-ng-spm",
+      "state" : {
+        "revision" : "15b87671e3c7486b6a4404f997b1ae59a7eae441",
+        "version" : "2023.9.13"
+      }
+    },
+    {
+      "identity" : "fmt-spm",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/IhorShevchuk/fmt-spm",
+      "state" : {
+        "revision" : "f55d5919dac84653c0b84f454fa16b20eddf4c8d",
+        "version" : "10.2.1"
+      }
+    },
+    {
+      "identity" : "onnxruntime-swift-package-manager",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/microsoft/onnxruntime-swift-package-manager",
+      "state" : {
+        "revision" : "18e053d3442bea0848491c0363c170741693c2c1",
+        "version" : "1.16.0"
+      }
+    },
+    {
+      "identity" : "piper-objc",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/IhorShevchuk/piper-objc",
+      "state" : {
+        "revision" : "6377b979b4bfc33fcd3940818b32645f3994e136",
+        "version" : "0.1.2"
+      }
+    },
+    {
+      "identity" : "piper-phonemize-spm",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/IhorShevchuk/piper-phonemize-spm",
+      "state" : {
+        "revision" : "6b5444677abe6ab95af92221ce818d2788615fb7",
+        "version" : "2023.11.14"
+      }
+    },
+    {
+      "identity" : "piper-spm",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/IhorShevchuk/piper-spm",
+      "state" : {
+        "revision" : "7e4bc48a679272ccd4b3c0b401a8ad3e30d85aab",
+        "version" : "2023.11.14"
+      }
+    },
+    {
+      "identity" : "spdlog-spm",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/IhorShevchuk/spdlog-spm",
+      "state" : {
+        "revision" : "cb404df86d4c48dd0850c90ed7603bebab5a286d",
+        "version" : "1.13.0"
+      }
+    }
+  ],
+  "version" : 2
+}

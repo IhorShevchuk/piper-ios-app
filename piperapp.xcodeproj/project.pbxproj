@@ -7,13 +7,14 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		0181B8A72B0E50470030F36E /* piperappApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0181B8A62B0E50470030F36E /* piperappApp.swift */; };
+		010F1E0E2B805FFF00357A22 /* piper-objc in Frameworks */ = {isa = PBXBuildFile; productRef = 010F1E0D2B805FFF00357A22 /* piper-objc */; };
+		0145AF0F2B804B2000D94528 /* piper-objc in Frameworks */ = {isa = PBXBuildFile; productRef = 0145AF0E2B804B2000D94528 /* piper-objc */; };
+		0181B8A72B0E50470030F36E /* PiperApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0181B8A62B0E50470030F36E /* PiperApp.swift */; };
 		0181B8A92B0E50470030F36E /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0181B8A82B0E50470030F36E /* ContentView.swift */; };
 		0181B8AB2B0E50480030F36E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0181B8AA2B0E50480030F36E /* Assets.xcassets */; };
 		0181B8AE2B0E50480030F36E /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0181B8AD2B0E50480030F36E /* Preview Assets.xcassets */; };
 		0181B8B82B0E50480030F36E /* PiperappTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0181B8B72B0E50480030F36E /* PiperappTests.swift */; };
-		0181B8D42B0E538E0030F36E /* piperDemo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0181B8D32B0E538E0030F36E /* piperDemo.swift */; };
-		01E4FA052B707BDD00EC18C3 /* piper-objc in Frameworks */ = {isa = PBXBuildFile; productRef = 01E4FA042B707BDD00EC18C3 /* piper-objc */; };
+		0181B8D42B0E538E0030F36E /* PiperDemo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0181B8D32B0E538E0030F36E /* PiperDemo.swift */; };
 		01E4FA132B707D4000EC18C3 /* Logger.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01E4FA122B707D4000EC18C3 /* Logger.swift */; };
 		01E4FA192B70819F00EC18C3 /* PiperappUtils.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 01E4FA0B2B707CEC00EC18C3 /* PiperappUtils.framework */; };
 		01F87EE02B3D166C00DF2C01 /* PiperttsAudioUnit.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01F87EDF2B3D166C00DF2C01 /* PiperttsAudioUnit.swift */; };
@@ -65,13 +66,13 @@
 
 /* Begin PBXFileReference section */
 		0181B8A32B0E50470030F36E /* PiperApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PiperApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		0181B8A62B0E50470030F36E /* piperappApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = piperappApp.swift; sourceTree = "<group>"; };
+		0181B8A62B0E50470030F36E /* PiperApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PiperApp.swift; sourceTree = "<group>"; };
 		0181B8A82B0E50470030F36E /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		0181B8AA2B0E50480030F36E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		0181B8AD2B0E50480030F36E /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		0181B8B32B0E50480030F36E /* PiperAppTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PiperAppTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		0181B8B72B0E50480030F36E /* PiperappTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PiperappTests.swift; sourceTree = "<group>"; };
-		0181B8D32B0E538E0030F36E /* piperDemo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = piperDemo.swift; sourceTree = "<group>"; };
+		0181B8D32B0E538E0030F36E /* PiperDemo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PiperDemo.swift; sourceTree = "<group>"; };
 		0181B8D62B0E54360030F36E /* libc++.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = "libc++.tbd"; path = "usr/lib/libc++.tbd"; sourceTree = SDKROOT; };
 		0181B8D82B0E55C00030F36E /* libc++.1.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = "libc++.1.tbd"; path = "usr/lib/libc++.1.tbd"; sourceTree = SDKROOT; };
 		0181B8E02B0E69390030F36E /* uk_UA-lada.onnx */ = {isa = PBXFileReference; lastKnownFileType = file; name = "uk_UA-lada.onnx"; path = "piperapp/uk_UA-lada.onnx"; sourceTree = "<group>"; };
@@ -115,8 +116,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				01E4FA052B707BDD00EC18C3 /* piper-objc in Frameworks */,
 				01E4FA192B70819F00EC18C3 /* PiperappUtils.framework in Frameworks */,
+				010F1E0E2B805FFF00357A22 /* piper-objc in Frameworks */,
+				0145AF0F2B804B2000D94528 /* piper-objc in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -153,9 +155,9 @@
 			isa = PBXGroup;
 			children = (
 				01E4FA1E2B7089E800EC18C3 /* BuildScripts */,
-				0181B8A62B0E50470030F36E /* piperappApp.swift */,
+				0181B8A62B0E50470030F36E /* PiperApp.swift */,
 				0181B8A82B0E50470030F36E /* ContentView.swift */,
-				0181B8D32B0E538E0030F36E /* piperDemo.swift */,
+				0181B8D32B0E538E0030F36E /* PiperDemo.swift */,
 				0181B8AA2B0E50480030F36E /* Assets.xcassets */,
 				0181B8AC2B0E50480030F36E /* Preview Content */,
 			);
@@ -353,7 +355,8 @@
 			);
 			name = PiperTTS;
 			packageProductDependencies = (
-				01E4FA042B707BDD00EC18C3 /* piper-objc */,
+				0145AF0E2B804B2000D94528 /* piper-objc */,
+				010F1E0D2B805FFF00357A22 /* piper-objc */,
 			);
 			productName = pipertts;
 			productReference = 01F87ED02B3D166C00DF2C01 /* PiperTTS.appex */;
@@ -395,7 +398,7 @@
 			);
 			mainGroup = 0181B89A2B0E50470030F36E;
 			packageReferences = (
-				01E4FA032B707B2C00EC18C3 /* XCRemoteSwiftPackageReference "piper-objc" */,
+				010F1E0C2B805FFF00357A22 /* XCRemoteSwiftPackageReference "piper-objc" */,
 			);
 			productRefGroup = 0181B8A42B0E50470030F36E /* Products */;
 			projectDirPath = "";
@@ -492,8 +495,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				0181B8A92B0E50470030F36E /* ContentView.swift in Sources */,
-				0181B8D42B0E538E0030F36E /* piperDemo.swift in Sources */,
-				0181B8A72B0E50470030F36E /* piperappApp.swift in Sources */,
+				0181B8D42B0E538E0030F36E /* PiperDemo.swift in Sources */,
+				0181B8A72B0E50470030F36E /* PiperApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -933,20 +936,24 @@
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
-		01E4FA032B707B2C00EC18C3 /* XCRemoteSwiftPackageReference "piper-objc" */ = {
+		010F1E0C2B805FFF00357A22 /* XCRemoteSwiftPackageReference "piper-objc" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/IhorShevchuk/piper-objc";
 			requirement = {
-				kind = revision;
-				revision = 764750119d3493fab9a07237609272ba041cc089;
+				kind = upToNextMinorVersion;
+				minimumVersion = 0.1.2;
 			};
 		};
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
-		01E4FA042B707BDD00EC18C3 /* piper-objc */ = {
+		010F1E0D2B805FFF00357A22 /* piper-objc */ = {
 			isa = XCSwiftPackageProductDependency;
-			package = 01E4FA032B707B2C00EC18C3 /* XCRemoteSwiftPackageReference "piper-objc" */;
+			package = 010F1E0C2B805FFF00357A22 /* XCRemoteSwiftPackageReference "piper-objc" */;
+			productName = "piper-objc";
+		};
+		0145AF0E2B804B2000D94528 /* piper-objc */ = {
+			isa = XCSwiftPackageProductDependency;
 			productName = "piper-objc";
 		};
 /* End XCSwiftPackageProductDependency section */
